@@ -1,0 +1,163 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#f4f7fb;
+}
+
+.container{
+  width:1000px;
+  max-width:95%;
+  min-height:600px;
+  display:flex;
+  border-radius:20px;
+  overflow:hidden;
+  background:white;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Left Side */
+
+.left-section{
+  flex:1;
+  background:linear-gradient(to right,#1e3c72,#2a5298);
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:50px;
+}
+
+.brand h1{
+  font-size:50px;
+  margin-bottom:20px;
+}
+
+.brand p{
+  font-size:18px;
+  line-height:1.7;
+}
+
+/* Right Side */
+
+.right-section{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:40px;
+}
+
+.login-form{
+  width:100%;
+  max-width:400px;
+}
+
+.login-form h2{
+  font-size:35px;
+  color:#222;
+}
+
+.subtitle{
+  margin:10px 0 30px;
+  color:gray;
+}
+
+/* Inputs */
+
+.input-group{
+  margin-bottom:20px;
+}
+
+.input-group label{
+  display:block;
+  margin-bottom:8px;
+  font-weight:500;
+}
+
+.input-group input{
+  width:100%;
+  padding:14px;
+  border:1px solid #ccc;
+  border-radius:10px;
+  outline:none;
+  transition:0.3s;
+}
+
+.input-group input:focus{
+  border-color:#1e3c72;
+}
+
+/* Options */
+
+.options{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:25px;
+  font-size:14px;
+}
+
+.options a{
+  text-decoration:none;
+  color:#1e3c72;
+  font-weight:500;
+}
+
+/* Button */
+
+.login-btn{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:10px;
+  background:#1e3c72;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.login-btn:hover{
+  background:#16325c;
+}
+
+/* Register */
+
+.register-text{
+  text-align:center;
+  margin-top:25px;
+}
+
+.register-text a{
+  text-decoration:none;
+  color:#1e3c72;
+  font-weight:600;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+  .container{
+    flex-direction:column;
+  }
+
+  .left-section{
+    padding:30px;
+    text-align:center;
+  }
+
+  .brand h1{
+    font-size:40px;
+  }
+
+}

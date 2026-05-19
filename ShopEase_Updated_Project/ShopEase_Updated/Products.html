@@ -1,0 +1,265 @@
+# products.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | ShopEase</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="products.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <h1 class="logo">ShopEase</h1>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html" class="active">Products</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Explore Premium Products</h2>
+    <p>More than 50 trendy products with modern design.</p>
+  </div>
+</section>
+
+<section class="search-section">
+  <input type="text" id="searchInput" placeholder="Search products...">
+</section>
+
+<section class="products-section">
+
+  <div class="products-container">
+
+    <!-- Product Cards -->
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800" alt="Smart Watch">
+      <h3>Smart Watch</h3>
+      <p class="price">₹1,999</p>
+      <button onclick="addToCart(
+'Smart Watch',
+1999,
+'https://picsum.photos/400/400?1'
+)">
+Add to Cart
+</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800" alt="Headphones">
+      <h3>Wireless Headphones</h3>
+      <p class="price">₹2,499</p>
+      <button onclick="addToCart(
+'Wireless Headphones',
+2499,
+'https://picsum.photos/400/400?2'
+)">
+Add to Cart
+</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800" alt="Shoes">
+      <h3>Running Shoes</h3>
+      <p class="price">₹3,299</p>
+      <button onclick="addToCart(
+'Running Shoes',
+3299,
+'https://picsum.photos/400/400?2'
+)">
+Add to Cart
+</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800" alt="Backpack">
+      <h3>Backpack</h3>
+      <p class="price">₹999</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <!-- More Products -->
+
+    <div class="product-card"><img src="https://picsum.photos/300?1"><h3>Laptop Bag</h3><p class="price">₹1,299</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?2"><h3>Gaming Mouse</h3><p class="price">₹1,499</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?3"><h3>Bluetooth Speaker</h3><p class="price">₹2,199</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?4"><h3>Office Chair</h3><p class="price">₹4,999</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?5"><h3>Keyboard</h3><p class="price">₹899</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?6"><h3>Monitor</h3><p class="price">₹7,999</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?7"><h3>Mobile Stand</h3><p class="price">₹499</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?8"><h3>Power Bank</h3><p class="price">₹1,299</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?9"><h3>Camera</h3><p class="price">₹15,999</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?10"><h3>Gaming Keyboard</h3><p class="price">₹2,299</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?11"><h3>Tablet</h3><p class="price">₹12,999</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?12"><h3>Phone Case</h3><p class="price">₹399</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?13"><h3>LED TV</h3><p class="price">₹24,999</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?14"><h3>Wireless Charger</h3><p class="price">₹799</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?15"><h3>Water Bottle</h3><p class="price">₹299</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?16"><h3>Fitness Band</h3><p class="price">₹1,899</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?17"><h3>Desk Lamp</h3><p class="price">₹699</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?18"><h3>Study Table</h3><p class="price">₹5,999</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?19"><h3>Travel Bag</h3><p class="price">₹2,799</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?20"><h3>Digital Clock</h3><p class="price">₹999</p><button>Add to Cart</button></div>
+
+    <!-- 30 More -->
+
+    <div class="product-card"><img src="https://picsum.photos/300?21"><h3>Earbuds</h3><p class="price">₹1,799</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?22"><h3>Printer</h3><p class="price">₹6,499</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?23"><h3>VR Headset</h3><p class="price">₹18,999</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?24"><h3>Microphone</h3><p class="price">₹2,999</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?25"><h3>Tripod</h3><p class="price">₹1,199</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?26"><h3>Gaming Chair</h3><p class="price">₹8,999</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?27"><h3>SSD Drive</h3><p class="price">₹3,499</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?28"><h3>USB Hub</h3><p class="price">₹699</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?29"><h3>Smart Phone</h3><p class="price">₹19,999</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?30"><h3>Drone Camera</h3><p class="price">₹29,999</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?31"><h3>Smart Bulb</h3><p class="price">₹499</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?32"><h3>Action Camera</h3><p class="price">₹9,999</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?33"><h3>Mechanical Keyboard</h3><p class="price">₹4,299</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?34"><h3>Smart Glasses</h3><p class="price">₹11,999</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?35"><h3>Phone Holder</h3><p class="price">₹399</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?36"><h3>Gaming Console</h3><p class="price">₹39,999</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?37"><h3>Router</h3><p class="price">₹2,199</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?38"><h3>Graphic Tablet</h3><p class="price">₹5,499</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?39"><h3>Portable Fan</h3><p class="price">₹799</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?40"><h3>Electric Kettle</h3><p class="price">₹1,599</p><button>Add to Cart</button></div>
+
+    <!-- Final Products -->
+
+    <div class="product-card"><img src="https://picsum.photos/300?41"><h3>Hair Dryer</h3><p class="price">₹1,299</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?42"><h3>Air Fryer</h3><p class="price">₹4,499</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?43"><h3>Coffee Maker</h3><p class="price">₹3,299</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?44"><h3>Bluetooth Mouse</h3><p class="price">₹999</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?45"><h3>Smart Door Lock</h3><p class="price">₹7,999</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?46"><h3>Gaming Monitor</h3><p class="price">₹14,999</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?47"><h3>Wireless Keyboard</h3><p class="price">₹1,899</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?48"><h3>Mini Projector</h3><p class="price">₹10,999</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?49"><h3>Smart Vacuum</h3><p class="price">₹13,999</p><button>Add to Cart</button></div>
+    <div class="product-card"><img src="https://picsum.photos/300?50"><h3>Wireless Earphones</h3><p class="price">₹2,299</p><button>Add to Cart</button></div>
+
+  </div>
+    <button onclick="addToCart('Running Shoes',3299,'https://picsum.photos/400/400?3')">Add to Cart</button>
+
+<button onclick="addToCart('Backpack',999,'https://picsum.photos/400/400?4')">Add to Cart</button>
+
+<button onclick="addToCart('Laptop Bag',1299,'https://picsum.photos/400/400?5')">Add to Cart</button>
+
+<button onclick="addToCart('Gaming Mouse',1499,'https://picsum.photos/400/400?6')">Add to Cart</button>
+
+<button onclick="addToCart('Bluetooth Speaker',2199,'https://picsum.photos/400/400?7')">Add to Cart</button>
+
+<button onclick="addToCart('Office Chair',4999,'https://picsum.photos/400/400?8')">Add to Cart</button>
+
+<button onclick="addToCart('Keyboard',899,'https://picsum.photos/400/400?9')">Add to Cart</button>
+
+<button onclick="addToCart('Monitor',7999,'https://picsum.photos/400/400?10')">Add to Cart</button>
+
+<button onclick="addToCart('Mobile Stand',499,'https://picsum.photos/400/400?11')">Add to Cart</button>
+
+<button onclick="addToCart('Power Bank',1299,'https://picsum.photos/400/400?12')">Add to Cart</button>
+
+<button onclick="addToCart('Camera',15999,'https://picsum.photos/400/400?13')">Add to Cart</button>
+
+<button onclick="addToCart('Gaming Keyboard',2299,'https://picsum.photos/400/400?14')">Add to Cart</button>
+
+<button onclick="addToCart('Tablet',12999,'https://picsum.photos/400/400?15')">Add to Cart</button>
+
+<button onclick="addToCart('Phone Case',399,'https://picsum.photos/400/400?16')">Add to Cart</button>
+
+<button onclick="addToCart('LED TV',24999,'https://picsum.photos/400/400?17')">Add to Cart</button>
+
+<button onclick="addToCart('Wireless Charger',799,'https://picsum.photos/400/400?18')">Add to Cart</button>
+
+<button onclick="addToCart('Water Bottle',299,'https://picsum.photos/400/400?19')">Add to Cart</button>
+
+<button onclick="addToCart('Fitness Band',1899,'https://picsum.photos/400/400?20')">Add to Cart</button>
+
+<button onclick="addToCart('Desk Lamp',699,'https://picsum.photos/400/400?21')">Add to Cart</button>
+
+<button onclick="addToCart('Study Table',5999,'https://picsum.photos/400/400?22')">Add to Cart</button>
+
+<button onclick="addToCart('Travel Bag',2799,'https://picsum.photos/400/400?23')">Add to Cart</button>
+
+<button onclick="addToCart('Digital Clock',999,'https://picsum.photos/400/400?24')">Add to Cart</button>
+
+<button onclick="addToCart('Earbuds',1799,'https://picsum.photos/400/400?25')">Add to Cart</button>
+
+<button onclick="addToCart('Printer',6499,'https://picsum.photos/400/400?26')">Add to Cart</button>
+
+<button onclick="addToCart('VR Headset',18999,'https://picsum.photos/400/400?27')">Add to Cart</button>
+
+<button onclick="addToCart('Microphone',2999,'https://picsum.photos/400/400?28')">Add to Cart</button>
+
+<button onclick="addToCart('Tripod',1199,'https://picsum.photos/400/400?29')">Add to Cart</button>
+
+<button onclick="addToCart('Gaming Chair',8999,'https://picsum.photos/400/400?30')">Add to Cart</button>
+
+<button onclick="addToCart('SSD Drive',3499,'https://picsum.photos/400/400?31')">Add to Cart</button>
+
+<button onclick="addToCart('USB Hub',699,'https://picsum.photos/400/400?32')">Add to Cart</button>
+
+<button onclick="addToCart('Smart Phone',19999,'https://picsum.photos/400/400?33')">Add to Cart</button>
+
+<button onclick="addToCart('Drone Camera',29999,'https://picsum.photos/400/400?34')">Add to Cart</button>
+
+<button onclick="addToCart('Smart Bulb',499,'https://picsum.photos/400/400?35')">Add to Cart</button>
+
+<button onclick="addToCart('Action Camera',9999,'https://picsum.photos/400/400?36')">Add to Cart</button>
+
+<button onclick="addToCart('Mechanical Keyboard',4299,'https://picsum.photos/400/400?37')">Add to Cart</button>
+
+<button onclick="addToCart('Smart Glasses',11999,'https://picsum.photos/400/400?38')">Add to Cart</button>
+
+<button onclick="addToCart('Phone Holder',399,'https://picsum.photos/400/400?39')">Add to Cart</button>
+
+<button onclick="addToCart('Gaming Console',39999,'https://picsum.photos/400/400?40')">Add to Cart</button>
+
+<button onclick="addToCart('Router',2199,'https://picsum.photos/400/400?41')">Add to Cart</button>
+
+<button onclick="addToCart('Graphic Tablet',5499,'https://picsum.photos/400/400?42')">Add to Cart</button>
+
+<button onclick="addToCart('Portable Fan',799,'https://picsum.photos/400/400?43')">Add to Cart</button>
+
+<button onclick="addToCart('Electric Kettle',1599,'https://picsum.photos/400/400?44')">Add to Cart</button>
+
+<button onclick="addToCart('Hair Dryer',1299,'https://picsum.photos/400/400?45')">Add to Cart</button>
+
+<button onclick="addToCart('Air Fryer',4499,'https://picsum.photos/400/400?46')">Add to Cart</button>
+
+<button onclick="addToCart('Coffee Maker',3299,'https://picsum.photos/400/400?47')">Add to Cart</button>
+
+<button onclick="addToCart('Bluetooth Mouse',999,'https://picsum.photos/400/400?48')">Add to Cart</button>
+
+<button onclick="addToCart('Smart Door Lock',7999,'https://picsum.photos/400/400?49')">Add to Cart</button>
+
+<button onclick="addToCart('Gaming Monitor',14999,'https://picsum.photos/400/400?50')">Add to Cart</button>
+
+<button onclick="addToCart('Wireless Keyboard',1899,'https://picsum.photos/400/400?51')">Add to Cart</button>
+
+<button onclick="addToCart('Mini Projector',10999,'https://picsum.photos/400/400?52')">Add to Cart</button>
+
+<button onclick="addToCart('Smart Vacuum',13999,'https://picsum.photos/400/400?53')">Add to Cart</button>
+
+<button onclick="addToCart('Wireless Earphones',2299,'https://picsum.photos/400/400?54')">Add to Cart</button>
+
+</section>
+
+<script src="products.js"></script>
+
+</body>
+</html>

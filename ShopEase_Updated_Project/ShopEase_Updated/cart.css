@@ -1,0 +1,301 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#f4f7fb;
+}
+
+/* Navbar */
+
+.navbar{
+  background:#111827;
+  padding:20px 60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  color:white;
+  font-size:32px;
+  font-weight:700;
+}
+
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:25px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:white;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active{
+  color:#60a5fa;
+}
+
+/* Hero */
+
+.cart-hero{
+  height:35vh;
+  background:linear-gradient(to right,#1e3c72,#2a5298);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.hero-content h2{
+  font-size:50px;
+  margin-bottom:10px;
+}
+
+.hero-content p{
+  font-size:18px;
+}
+
+/* Cart Section */
+
+.cart-section{
+  padding:60px;
+}
+
+/* Layout */
+
+.cart-container{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:30px;
+}
+
+/* Left Side */
+
+.cart-items{
+  display:flex;
+  flex-direction:column;
+  gap:25px;
+}
+
+/* Cart Card */
+
+.cart-card{
+  background:white;
+  border-radius:20px;
+  padding:20px;
+  display:flex;
+  gap:25px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.cart-card:hover{
+  transform:translateY(-5px);
+}
+
+.cart-card img{
+  width:180px;
+  height:180px;
+  object-fit:cover;
+  border-radius:15px;
+}
+
+/* Details */
+
+.cart-details{
+  flex:1;
+}
+
+.cart-details h3{
+  font-size:26px;
+  margin-bottom:10px;
+}
+
+.cart-details p{
+  color:gray;
+  line-height:1.6;
+  margin-bottom:15px;
+}
+
+.cart-details h4{
+  color:#1e3c72;
+  font-size:24px;
+  margin-bottom:20px;
+}
+
+/* Actions */
+
+.cart-actions{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+/* Quantity */
+
+.quantity{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.quantity button{
+  width:38px;
+  height:38px;
+  border:none;
+  border-radius:10px;
+  background:#1e3c72;
+  color:white;
+  font-size:18px;
+  cursor:pointer;
+}
+
+.quantity span{
+  font-size:18px;
+  font-weight:600;
+}
+
+/* Remove Button */
+
+.remove-btn{
+  padding:12px 18px;
+  border:none;
+  border-radius:10px;
+  background:#ef4444;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.remove-btn:hover{
+  background:#dc2626;
+}
+
+/* Summary Card */
+
+.summary-card{
+  background:white;
+  border-radius:20px;
+  padding:30px;
+  height:fit-content;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.summary-card h3{
+  font-size:30px;
+  margin-bottom:30px;
+}
+
+/* Summary Items */
+
+.summary-item{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:20px;
+  font-size:18px;
+}
+
+.summary-total{
+  display:flex;
+  justify-content:space-between;
+  margin-top:25px;
+  font-size:24px;
+  font-weight:700;
+  color:#1e3c72;
+}
+
+/* Coupon */
+
+.coupon-box{
+  display:flex;
+  margin-top:30px;
+  gap:10px;
+}
+
+.coupon-box input{
+  flex:1;
+  padding:14px;
+  border:1px solid #ccc;
+  border-radius:10px;
+  outline:none;
+}
+
+.coupon-box button{
+  padding:14px 20px;
+  border:none;
+  border-radius:10px;
+  background:#111827;
+  color:white;
+  cursor:pointer;
+}
+
+/* Checkout */
+
+.checkout-btn{
+  width:100%;
+  margin-top:30px;
+  padding:16px;
+  border:none;
+  border-radius:12px;
+  background:#1e3c72;
+  color:white;
+  font-size:17px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.checkout-btn:hover{
+  background:#16325c;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+  .cart-container{
+    grid-template-columns:1fr;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
+  }
+
+  .cart-section{
+    padding:20px;
+  }
+
+  .cart-card{
+    flex-direction:column;
+  }
+
+  .cart-card img{
+    width:100%;
+    height:250px;
+  }
+
+  .cart-actions{
+    flex-direction:column;
+    gap:20px;
+    align-items:flex-start;
+  }
+
+  .hero-content h2{
+    font-size:38px;
+  }
+
+}
